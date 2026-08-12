@@ -13,10 +13,10 @@ int main(int argc, char *argv[]) {
     e = a-b;
     f = a*b;
     
-	printf("a divisao de %f / %f = %f",a,b,c);
-	printf("a soma de %f + %f = %f",a,b,d);
-	printf("a subtraçao de %f - %f = %f",a,b,e);
-	printf("a multiplicacao de %f * %f = %f",a,b,f);
+	printf("a divisao de %f / %f = %f\n", a,b,c);
+	printf("a soma de %f + %f = %f\n", a,b,d);
+	printf("a subtraÃ§ao de %f - %f = %f\n", a,b,e);
+	printf("a multiplicacao de %f * %f = %f\n", a,b,f);
 	
 	return 0;
 }
