@@ -10,6 +10,7 @@ int main(int argc, char *argv[]) {
 	
 	printf("Insira o primeiro valor: ");
 	scanf("%d", &primeiro);
+	
 	printf("Insira o segundo valor: ");
 	scanf("%d", &segundo);
 	
@@ -120,10 +121,13 @@ float r, volume, pi;
 double x1, y1, x2, y2, d;
    printf("\nInsira o x1: ");
    scanf("%lf", &x1);
+	
    printf("Insira o y1: ");
    scanf("%lf", &y1);
+	
    printf("Insira o x2: ");
    scanf("%lf", &x2);
+	
    printf("Insira o y2: ");
    scanf("%lf", &y2);
 
