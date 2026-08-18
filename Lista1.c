@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 /* 1) Faça um programa que leia dois números inteiros e depois os imprima na ordem inversa em que eles foram lidos. */
 
@@ -116,5 +117,19 @@ float r, volume, pi;
 
 /* 8) Leia os quatro valores do usuário correspondentes às coordenadas em um plano cartesiano, p1(x1,y1) e p2(x2,y2) e calcule e mostre a distância entre eles, aplicando a distância euclidiana, segundo a fórmula: d = √((x₂ − x₁)² + (y₂ − y₁)²) */
 
+double x1, y1, x2, y2, d;
+   printf("\nInsira o x1: ");
+   scanf("%lf", &x1);
+   printf("Insira o y1: ");
+   scanf("%lf", &y1);
+   printf("Insira o x2: ");
+   scanf("%lf", &x2);
+   printf("Insira o y2: ");
+   scanf("%lf", &y2);
+
+   d = sqrt((x2 - x1) * (x2 - x1)+
+            (y2 - y1) * (y2 - y1));
+   printf("A distancia euclidiana vale: %.5lf", d);
+	
 	return 0;
 }
