@@ -31,10 +31,12 @@ int main(int argc, char *argv[]) {
 	
 /* 3) Implemente um programa que leia um número n [com n positivo & n <= 64] e mostre na tela o seu valor em base binária (bits). */
 
-    int bit1, bit2, bit3, bit4, bit5, bit6, bit7, bitx;
+    int bit1, bit2, bit3, bit4, bit5, bit6, bit7, bitx, n;
       printf("\nInsira o valor para ser convertido: ");
       scanf("%d", &bitx);
-
+	
+     n = bitx;
+	
      bit7 = bitx %2;
      bitx /= 2;
 
@@ -56,7 +58,7 @@ int main(int argc, char *argv[]) {
      bit1 = bitx %2;
      bitx /= 2;
 
-    printf("%d%d%d%d%d%d%d", bit1, bit2, bit3, bit4, bit5, bit6, bit7);
+    printf("O numero %d em binario: %d%d%d%d%d%d%d", n, bit1, bit2, bit3, bit4, bit5, bit6, bit7);
     
 /* 4) Faça um programa que leia o salário fixo e o valor total em vendas de um vendedor. Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, mostre o total a receber no final do mês, com duas casas decimais.
 */
