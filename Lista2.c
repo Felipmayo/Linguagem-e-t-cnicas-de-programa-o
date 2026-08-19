@@ -31,7 +31,14 @@ int main(int argc, char *argv[]) {
    printf("%.2f reais em dolar vale: %.2f dolares", reais, total);
 
 /* 4) */
+  
+   float c, f;
+   printf("Insira a temperatura em celsius: ");
+   scanf("%f", &c);
+  
+   f = c * (9.0 / 5.0) + 32.0;
 
+   printf("%f celsius vale: %f fahrenheit", c, f);
 
   return 0;
 }
