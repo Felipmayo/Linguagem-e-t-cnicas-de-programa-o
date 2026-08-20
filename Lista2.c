@@ -99,9 +99,6 @@ int main(int argc, char *argv[]) {
    distancia = velocidade * duracao;
    gasolina = distancia / 12;
    printf("Para percorrer a distancia de %.2f Km, vai precisar de %.2f litros de gasolina", distancia, gasolina);
-
-   
-
    
    /* 10.1 */
 
