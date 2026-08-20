@@ -61,7 +61,12 @@ int main(int argc, char *argv[]) {
    printf("O sucessor de %d vale: %d", inteiro, inteiro + 1);
    printf("\nO antecessor de %d vale: %d", inteiro, inteiro - 1);
 
+   /* 7) */
 
+
+
+
+   
    /* 10.1 */
 
    int a, b, c, maior, maior_temp;
