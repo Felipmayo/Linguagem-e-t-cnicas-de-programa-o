@@ -32,13 +32,13 @@ int main(int argc, char *argv[]) {
 
 /* 4) */
   
-   float c, f;
-   printf("Insira a temperatura em celsius: ");
-   scanf("%f", &c);
+   float celsius, f;
+   printf("\nInsira a temperatura em celsius: ");
+   scanf("%f", &celsius);
   
-   f = c * (9.0 / 5.0) + 32.0;
+   f = celsius * (9.0 / 5.0) + 32.0;
 
-   printf("%f celsius vale: %f fahrenheit", c, f);
+   printf("%f celsius vale: %f fahrenheit", celsius, f);
 
    /* 5) */
 
