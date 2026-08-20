@@ -63,8 +63,19 @@ int main(int argc, char *argv[]) {
 
    /* 7) */
 
+   float ganhador, segundo, terceiro;
 
+   ganhador = 780000*0.46;
+   segundo = 780000*0.32;
+   terceiro = 780000 - (ganhador + segundo);
 
+   printf("\nO vecedor do concurso ganhou: %.2f reais", ganhador);
+   printf("\nO segundo ganhou: %.2f reais", segundo);
+   printf("\nO terceiro ganhou: %.2f reais", terceiro);
+
+   /* 8) */
+
+   
 
    
    /* 10.1 */
