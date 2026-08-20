@@ -40,5 +40,17 @@ int main(int argc, char *argv[]) {
 
    printf("%f celsius vale: %f fahrenheit", c, f);
 
+   /* 5) */
+
+   float G, R, pi;
+   pi = 3.141592;
+
+   printf("\nInsira o angulo em graus: ");
+   scanf("%f", &G);
+   
+   R = G * pi / 180;
+
+   printf("O angulo de %f graus vale %f em radianos", G, R);
+
   return 0;
 }
