@@ -60,8 +60,9 @@ int main(int argc, char *argv[]) {
 
     printf("O numero %d em binario: %d%d%d%d%d%d%d", n, bit1, bit2, bit3, bit4, bit5, bit6, bit7);
     
-/* 4) Faça um programa que leia o salário fixo e o valor total em vendas de um vendedor. Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, mostre o total a receber no final do mês, com duas casas decimais.
-*/
+/* 4) Faça um programa que leia o salário fixo e o valor total em vendas de um vendedor.
+Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, mostre o total a receber no final do mês, 
+com duas casas decimais. */
 
 float salario, vendas, total;
    printf("\nInsira o salario: ");
@@ -108,7 +109,8 @@ int diasvividos, anos, meses, dias;
 
   printf("voce tem: %d anos, %d meses e %d dias de vida", anos, meses, diasvividos);
 
-/* 7) Faça um programa que calcule e mostre o volume de uma esfera sendo fornecido o valor de seu raio (R). A fórmula para calcular o volume é: (4/3) * pi * R³. Considere (atribua) para pi o valor 3.14159. */
+/* 7) Faça um programa que calcule e mostre o volume de uma esfera sendo fornecido o valor de seu raio (R).
+A fórmula para calcular o volume é: (4/3) * pi * R³. Considere (atribua) para pi o valor 3.14159. */
 
 float r, volume, pi;
   pi = 3.14159;
@@ -118,7 +120,8 @@ float r, volume, pi;
   volume = (4 / 3.0) * pi * r * r * r;
   printf("O volume da esfera vale: %f", volume);
 
-/* 8) Leia os quatro valores do usuário correspondentes às coordenadas em um plano cartesiano, p1(x1,y1) e p2(x2,y2) e calcule e mostre a distância entre eles, aplicando a distância euclidiana, segundo a fórmula: d = √((x₂ − x₁)² + (y₂ − y₁)²) */
+/* 8) Leia os quatro valores do usuário correspondentes às coordenadas em um plano cartesiano, p1(x1,y1) e p2(x2,y2)
+e calcule e mostre a distância entre eles, aplicando a distância euclidiana, segundo a fórmula: d = √((x₂ − x₁)² + (y₂ − y₁)²) */
 
 double x1, y1, x2, y2, d;
    printf("\nInsira o x1: ");
