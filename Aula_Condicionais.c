@@ -24,6 +24,17 @@ int main(int argc, char *argv[]) {
         r = c;
     }
     printf("%d eh o maior", r);
+
+//número par ou ímpar
+    int numero;
+    printf("\nInsira um numero: ");
+    scanf("%d", &numero);
     
-  return 0;
+    if(numero%2 == 0){
+        printf("O numero %d eh par", numero);
+    }
+    else{
+        printf("O numero %d eh impar", numero);
+    }
+    return 0;
 }
