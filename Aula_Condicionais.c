@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
     }
     printf("%d eh o maior", r);
 
-//número par ou ímpar
+//Informe se o número par ou ímpar
     int numero;
     printf("\nInsira um numero: ");
     scanf("%d", &numero);
