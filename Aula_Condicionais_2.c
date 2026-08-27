@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
                 sub = a-b;
                 mult = a*b;
                 div = a/b;
-                printf("%d, %d, %d, %d", sum, sub, mult, div);
+                printf("sum: %d, sub: %d, mult: %d, div: %d", sum, sub, mult, div);
             }
         }else{
             if(a%b == 0) printf("sim"); else printf("nao");
