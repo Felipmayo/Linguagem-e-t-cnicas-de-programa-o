@@ -67,17 +67,17 @@ void exerc_3(){
     scanf("%f %f %f", &nota_1, &nota_2, &nota_3);
 
     if(calc_notas(nota_1, nota_2, nota_3) >= 70 && calc_notas(nota_1, nota_2, nota_3) <=100 ){
-        printf("\033[34mAprovado\033[0m\n");
+        printf("Aprovado!");
     }
     else if(calc_notas(nota_1, nota_2, nota_3) < 70 && calc_notas(nota_1, nota_2, nota_3) >= 40){
         resto = 100 - calc_notas(nota_1, nota_2, nota_3);
-        printf("\033[32mExame!\033[0m\nFaltam %f pontos", resto);
+        printf("Exame!\nFaltam %f pontos", resto);
     }
     else if(calc_notas(nota_1, nota_2, nota_3) < 40){
-        printf("\033[31mReprovado!\033[0m\n");
+        printf("Reprovado!");
     }
     else{
-        printf("\033[31mNotas invalidas!\033[0m\n");
+        printf("Notas invalidas!");
     }
 }
 
