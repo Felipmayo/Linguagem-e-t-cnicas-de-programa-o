@@ -63,18 +63,21 @@ void exerc_3(){
     return (nota_1 + nota_2 + nota_3) / 3;
 }
     float nota_1, nota_2, nota_3, resto;
+    char nome[100];
+    printf("Insira o nome: ");
+    scanf(" %s", nome);
     printf("Insira as tres notas: ");
     scanf("%f %f %f", &nota_1, &nota_2, &nota_3);
 
     if(calc_notas(nota_1, nota_2, nota_3) >= 70 && calc_notas(nota_1, nota_2, nota_3) <=100 ){
-        printf("Aprovado!");
+        printf("Aluno %s: Aprovado!", nome);
     }
     else if(calc_notas(nota_1, nota_2, nota_3) < 70 && calc_notas(nota_1, nota_2, nota_3) >= 40){
         resto = 100 - calc_notas(nota_1, nota_2, nota_3);
-        printf("Exame!\nFaltam %f pontos", resto);
+        printf("Aluno %s: Exame!\nFaltam %f pontos", nome, resto);
     }
     else if(calc_notas(nota_1, nota_2, nota_3) < 40){
-        printf("Reprovado!");
+        printf("Aluno %s: Reprovado!", nome);
     }
     else{
         printf("Notas invalidas!");
