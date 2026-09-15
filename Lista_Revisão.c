@@ -73,3 +73,31 @@ int main(int argc, char *argv[]){
     }
     return 0;
 } 
+
+
+
+
+
+#include <stdio.h>
+float calc_notas(float nota_1, float nota_2, float nota_3){
+    return (nota_1 + nota_2 + nota_3) / 3;
+}
+int main(){
+    float nota_1, nota_2, nota_3, resto;
+    printf("Insira as tres notas: ");
+    scanf("%f %f %f", &nota_1, &nota_2, &nota_3);
+
+    if(calc_notas(nota_1, nota_2, nota_3) >= 70 && calc_notas(nota_1, nota_2, nota_3) <=100 ){
+        printf("\033[34mAprovado\033[0m\n");
+    }
+    else if(calc_notas(nota_1, nota_2, nota_3) < 70 && calc_notas(nota_1, nota_2, nota_3) >= 40){
+        resto = 100 - calc_notas(nota_1, nota_2, nota_3);
+        printf("\033[32mExame!\033[0m\nFaltam %f pontos", resto);
+    }
+    else if(calc_notas(nota_1, nota_2, nota_3) < 40){
+        printf("\033[31mReprovado!\033[0m\n");
+    }
+    else{
+        printf("\033[31mNotas invalidas!\033[0m\n");
+    }
+}
