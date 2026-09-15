@@ -16,6 +16,8 @@ int main(){
   printf("%d %d %d %d", A, B, C, D);
 }
 
+//----------------------------------------------------------------------------------------------
+
 float calc_vpa(float valor_patrimonial, float quantidade_acoes){
     return valor_patrimonial / quantidade_acoes;
 }
