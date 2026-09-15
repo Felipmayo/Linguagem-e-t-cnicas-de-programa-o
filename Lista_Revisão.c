@@ -57,32 +57,11 @@ float calc_C (float temp){
         printf("\nGrandeza invalida");
     }
 }
-int main(int argc, char *argv[]){
-    int op;
-    printf("Qual exercicio pretende fazer? [1,2 ou 3] ");
-    scanf("%d", &op);
 
-    switch(op){
-        case 1:
-            exerc_1();
-            break;
-
-        case 2:
-            exerc_2();
-            break;
-    }
-    return 0;
-} 
-
-
-
-
-
-#include <stdio.h>
-float calc_notas(float nota_1, float nota_2, float nota_3){
+void exerc_3(){
+    float calc_notas(float nota_1, float nota_2, float nota_3){
     return (nota_1 + nota_2 + nota_3) / 3;
 }
-int main(){
     float nota_1, nota_2, nota_3, resto;
     printf("Insira as tres notas: ");
     scanf("%f %f %f", &nota_1, &nota_2, &nota_3);
@@ -101,3 +80,24 @@ int main(){
         printf("\033[31mNotas invalidas!\033[0m\n");
     }
 }
+
+int main(int argc, char *argv[]){
+    int op;
+    printf("Qual exercicio pretende fazer? [1,2 ou 3] ");
+    scanf("%d", &op);
+
+    switch(op){
+        case 1:
+            exerc_1();
+            break;
+
+        case 2:
+            exerc_2();
+            break;
+        
+        case 3:
+            exerc_3();
+            break;
+    }
+    return 0;
+} 
