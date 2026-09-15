@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void exerc_1(){
 int multDigito(int dig, int valor){
         return dig*valor;
 }
-
-int main(int argc, char *argv[]){
     int num1, num2, num3, num4, num5, num6, num7, num8, num9, dgv1, dgv2, soma, resto, resto2;
     printf("Insira o CPF: (x x x . x x x . x x x - x x) ");
     scanf("%d %d %d . %d %d %d . %d %d %d - %d %d", 
@@ -34,6 +33,43 @@ int main(int argc, char *argv[]){
     else{
         printf("\nCPF inválido");
     }
-
-   return 0; 
 }
+void exerc_2(){
+    float calc_F (float temp){
+    return  (temp * 9/5) + 32;
+}
+float calc_C (float temp){
+    return  (temp - 32) * 5/9;
+}
+    float temp, grandeza;
+    printf("\nInsira a grandeza (1- Fahrenheit OU 2- Celsius): ");
+    scanf("%f", &grandeza);
+    printf("\nInsira o valor da temperatura: ");
+    scanf("%f", &temp);
+
+    if (grandeza == 2){
+        printf("\nA temperatura de %f Celsius eh %f Fahrenheit", temp, calc_F(temp));
+    }
+    else if (grandeza == 1){
+        printf("\nA temperatura de %f Fahrenheit eh %f Celsius", temp, calc_C(temp));
+    }
+    else{
+        printf("\nGrandeza invalida");
+    }
+}
+int main(int argc, char *argv[]){
+    int op;
+    printf("Qual exercicio pretende fazer? [1,2 ou 3] ");
+    scanf("%d", &op);
+
+    switch(op){
+        case 1:
+            exerc_1();
+            break;
+
+        case 2:
+            exerc_2();
+            break;
+    }
+    return 0;
+} 
