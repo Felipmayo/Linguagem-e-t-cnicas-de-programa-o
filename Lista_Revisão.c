@@ -65,7 +65,7 @@ void exerc_3(){
     float nota_1, nota_2, nota_3, resto;
     char nome[100];
     printf("Insira o nome: ");
-    scanf(" %s", nome);
+    scanf(" %s", &nome);
     printf("Insira as tres notas: ");
     scanf("%f %f %f", &nota_1, &nota_2, &nota_3);
 
