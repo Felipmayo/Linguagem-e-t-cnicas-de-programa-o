@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
+void exercicio_1(){
   int A, B, C, D, aux1, aux2;
   printf("Insira os valore de A, B, C, D: ");
   scanf("%d %d %d %d", &A, &B, &C, &D);
@@ -26,7 +26,7 @@ float calc_pvp(float preco_atual_acao, float vpa){
 }
 
 
-int main(){
+void exercicio_2(){
     float valor_patrimonial, quantidade_acoes, preco_atual_acao, pvp, vpa;
     
     printf("Insira o valor patrimonial da empresa: ");
@@ -59,7 +59,19 @@ int main(){
     else{
         printf("Class: Ruim!");
     }
+}
+int main(){
+    int op;
+    printf("Escolha o exercicio: [1] [2] ");
+    scanf("%d", &op);
+    switch(op){
+        
+        case 1:
+        exercicio_1();
+        break;
 
-return 0;
-
+        case 2:
+        exercicio_2();
+        break;
+    }
 }
