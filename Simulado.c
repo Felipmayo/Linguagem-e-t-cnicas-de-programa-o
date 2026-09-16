@@ -2,16 +2,15 @@
 #include <stdlib.h>
 
 void exercicio_1(){
-  int A, B, C, D, aux1, aux2;
+  int A, B, C, D, aux;
   printf("Insira os valore de A, B, C, D: ");
   scanf("%d %d %d %d", &A, &B, &C, &D);
-  aux1 = A;
-  aux2 = B;
-
+  aux = A;
   A = C;
-  B = aux1;
+  B = aux;
   C = D;
-  D = aux2;
+  aux = B;
+  D = aux;
 
   printf("%d %d %d %d", A, B, C, D);
 }
