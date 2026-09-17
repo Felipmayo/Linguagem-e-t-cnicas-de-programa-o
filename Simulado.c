@@ -7,10 +7,9 @@ void exercicio_1(){
   scanf("%d %d %d %d", &A, &B, &C, &D);
   aux = A;
   A = C;
-  B = aux;
   C = D;
-  aux = B;
-  D = aux;
+  D = B;
+  B = aux;
 
   printf("%d %d %d %d", A, B, C, D);
 }
