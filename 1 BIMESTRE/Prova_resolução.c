@@ -31,17 +31,15 @@ int main(){
    }
 
 //1)Legendarios e seus problemas com mochilas:
-   int mochilas, capacidade, itens, resto;
+   int mochilas, capacidade, itens;
    printf("Digite a quantidade de itens a serem levados: ");
    scanf("%d", &itens);
    printf("Digite quantos itens cada mochila pode carregar: ");
    scanf("%d", &capacidade);
 
    mochilas = itens / capacidade;
-   resto = itens % capacidade;
 
    printf("Serao preenchidas %d mochilas completas", mochilas);
-   printf("\nSobrou %d itens", resto);
  
  return 0;
 }
