@@ -246,7 +246,7 @@ void prova_3(){
         }
     }else if (questao == 1) {
         float peso, altura, imc;
-        printf("QUESTAO 1\n")
+        printf("QUESTAO 1\n");
         printf("Digite o peso: ");
         scanf("%f", &peso);
         printf("Digite a altura: \n");
@@ -267,9 +267,18 @@ void prova_3(){
             printf("Obeso\n");
         }
     }else if (questao == 2) {
-        printf("QUESTAO 2\n")
+        printf("QUESTAO 2\n");
+        printf("\nMovimentos da Torre de Hanoi:\n");
 
-    }else {
+        printf("Disco 1: A -> C\n");
+        printf("Disco 2: A -> B\n");
+        printf("Disco 1: C -> B\n");
+        printf("Disco 3: A -> C\n");
+        printf("Disco 1: B -> A\n");
+        printf("Disco 2: B -> C\n");
+        printf("Disco 1: A -> C\n");
+    }
+    else {
         printf("Questao invalida!\n");
     }
 }
