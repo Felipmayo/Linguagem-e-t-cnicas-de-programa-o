@@ -33,7 +33,8 @@ float mph_kmh(float mph) {
 }
 void prova_1(){
    int op1;
-   printf("Escolha a questao desejada: [0], [1], [2] ");
+   printf("PROVA ESOFT MA\n");
+   printf("Escolha a questao desejada: [0], [1], [2] \n");
    scanf("%d", &op1);
 
    if(op1 == 0){
@@ -128,6 +129,150 @@ void prova_1(){
         printf("Questao inexistente.\n");
     }
 }
+void prova_2(){
+    int op2;
+    printf("PROVA ESOFT MB");
+    printf("Escolha a questao desejada: [0], [1], [2] \n");
+      scanf("%d", &op2);
+
+    if(op2 == 0){
+        printf("QUESTAO 0\n");
+        int mochilas, capacidade, itens, sobra;
+
+        printf("Digite a quantidade de itens a serem levados: ");
+        scanf("%d", &itens);
+        printf("Digite quantos itens cada mochila pode carregar: ");
+        scanf("%d", &capacidade);
+
+        mochilas = itens / capacidade;
+        sobra = itens % capacidade;
+
+        printf("Serao preenchidas %d mochilas completas\n", mochilas);
+        printf("Sobraram %d itens\n", sobra);
+
+    }else if(op2 == 1){
+        printf("QUESTAO 1\n");
+        int a, b, c;
+
+        printf("Insira 3 numeros inteiros: \n");
+        scanf("%d %d %d", &a, &b, &c);
+
+        if(a == b || a == c || b == c){
+            printf("Os numeros tem que ser distintos\n");
+        }else if(a < b && b < c){
+            printf("%d %d %d\n", a, b, c);
+        }else if(a < c && c < b){
+            printf("%d %d %d\n", a, c, b);
+        }else if(b < a && a < c){
+            printf("%d %d %d\n", b, a, c);
+        }else if(b < c && c < a){
+            printf("%d %d %d\n", b, c, a);
+        }else if(c < a && a < b){
+            printf("%d %d %d\n", c, a, b);
+        }else{
+            printf("%d %d %d\n", c, b, a);
+        }
+    }else if(op2 == 2){
+        printf("QUESTAO 2\n");
+        int codigo;
+        float valor1, valor2;
+        printf("CODIGOS DAS OPERACOES:\n");
+        printf("Maior que (>)     -> 1\n");
+        printf("Menor que (<)     -> 2\n");
+        printf("Igual a (==)      -> 3\n");
+        printf("Diferente de (!=) -> 4\n\n");
+        printf("Digite os dois valores: ");
+        scanf("%f %f", &valor1, &valor2);
+        printf("Digite o codigo da operacao: ");
+        scanf("%d", &codigo);
+
+        if(codigo == 1){
+            if(valor1 > valor2){
+                printf("Verdadeiro\n");
+            }else{
+                printf("Falso\n");
+            }
+        }else if(codigo == 2){
+            if(valor1 < valor2){
+                printf("Verdadeiro\n");
+            }else{
+                printf("Falso\n");
+            }
+        }else if(codigo == 3){
+            if(valor1 == valor2){
+                printf("Verdadeiro\n");
+            }else{
+                printf("Falso\n");
+            }
+        }else if(codigo == 4){
+            if(valor1 != valor2){
+                printf("Verdadeiro\n");
+            }else{
+                printf("Falso\n");
+            }
+        }else{
+            printf("operador invalido\n");
+        }
+    }else{
+        printf("Questao inexistente.\n");
+    }
+}
+
+void prova_3(){
+    printf("PROVA ADSIS NA\n");
+    printf("Escolha a questao desejada: [0], [1], [2] \n");
+    int questao;
+    printf("0 - Numeros consecutivos\n");
+    printf("1 - IMC\n");
+    printf("2 - Torre de Hanoi\n");
+    printf("\nEscolha a questao: ");
+    scanf("%d", &questao);
+    if (questao == 0) {
+        int n1, n2, n3, n4, n5;
+        printf("QUESTAO 0\n");
+        printf("Digite 5 numeros inteiros: \n");
+        scanf("%d %d %d %d %d", &n1, &n2, &n3, &n4, &n5);
+        if (n2 == n1 + 1){
+            printf("%d e %d sao consecutivos\n", n1, n2);
+        }
+        if (n3 == n2 + 1){
+            printf("%d e %d sao consecutivos\n", n2, n3);
+        }
+        if (n4 == n3 + 1){
+            printf("%d e %d sao consecutivos\n", n3, n4);
+        }
+        if (n5 == n4 + 1){
+            printf("%d e %d sao consecutivos\n", n4, n5);
+        }
+    }else if (questao == 1) {
+        float peso, altura, imc;
+        printf("QUESTAO 1\n")
+        printf("Digite o peso: ");
+        scanf("%f", &peso);
+        printf("Digite a altura: \n");
+        scanf("%f", &altura);
+        imc = peso / (altura * altura);
+        printf("IMC: %.2f\n", imc);
+
+        if (imc < 18.5){
+            printf("Abaixo do peso\n");
+        }
+        else if (imc <= 24.9){
+            printf("Normal\n");
+        }
+        else if (imc <= 29.9){
+            printf("Acima do peso\n");
+        }
+        else{
+            printf("Obeso\n");
+        }
+    }else if (questao == 2) {
+        printf("QUESTAO 2\n")
+
+    }else {
+        printf("Questao invalida!\n");
+    }
+}
 int main(){
     int op_provas;
     printf("Escolha a prova: 1- [ESOFT MA], 2- [ESOFT MB], 3- [ADSIS NA] ");
@@ -137,6 +282,13 @@ int main(){
         case 1:
         prova_1();
         break;
-    }
 
+        case 2:
+        prova_2();
+        break;
+
+        case 3:
+        prova_3();
+        break;
+    }
 }
