@@ -53,3 +53,25 @@ int main(){
 
 /*---------------------------------------------------*/
 
+/*(Questão [0] da prova do primeiro bimestre #agora com laço),
+Faça um programa que leia 5 números inteiros e
+devolva todos os ímpares e todos os múltiplos de 5.*/
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    int num[5];
+    int i;
+    printf("Insira 5 numeros inteiros: \n");
+for(i=0; i < 5; i++){
+    scanf("%d", &num[i]);
+}
+for(i=0; i < 5; i++){
+    if(num[i] % 2 != 0){
+        printf("%d Eh impar!\n", num[i]);
+    }
+    if(num[i] % 5 == 0){
+        printf("%d Eh multiplo de 5!\n", num[i]);
+    }
+}
+  return 0;
+}
