@@ -60,12 +60,11 @@ devolva todos os ímpares e todos os múltiplos de 5.*/
 #include <stdlib.h>
 int main(){
     int num[5];
-    int i;
     printf("Insira 5 numeros inteiros: \n");
-for(i=0; i < 5; i++){
+for(int i=0; i < 5; i++){
     scanf("%d", &num[i]);
 }
-for(i=0; i < 5; i++){
+for(int i=0; i < 5; i++){
     if(num[i] % 2 != 0){
         printf("%d Eh impar!\n", num[i]);
     }
