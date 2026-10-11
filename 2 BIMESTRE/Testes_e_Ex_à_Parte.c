@@ -60,3 +60,86 @@ for(int i=1; i < 10; i++){
 
   return 0;
 }
+
+//-----------------------------------------------------------------------------------------------------------------
+
+/*Uma loja deseja analisar as vendas realizadas durante 7 dias. Crie um programa em C que armazene, em um vetor, o valor vendido em cada dia.
+O programa deverá:
+1. Ler os valores das vendas dos 7 dias.
+2. Não permitir valores negativos.
+3. Calcular o faturamento total da semana.
+4. Calcular a média diária de vendas.
+5. Identificar o maior e o menor valor de venda.
+6. Informar em qual dia da semana ocorreu a maior venda (dia 1 até dia 7).
+7. Contar quantos dias tiveram vendas acima da média.
+8. Contar quantos dias tiveram vendas abaixo da média.
+9. Informar quantos dias tiveram faturamento igual a zero.
+Desafio extra: calcular qual porcentagem do faturamento semanal foi obtida no dia de maior venda.*/
+
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    float vendas[7];
+    float total, media, maior, menor, porcentagem;
+    int acima, abaixo, zero, dia;
+    printf("<<Insira o valor das vendas de cada dia>> \n");
+
+total = 0;
+media = 0;
+acima = 0;
+abaixo = 0;
+zero = 0;
+for(int i=0; i < 7; i++){
+    printf("Vendas do dia: ");
+    scanf("%f", &vendas[i]);
+    if(vendas[i] < 0){
+        printf("Valor incorreto!");
+        return 0;
+    }
+    total = total + vendas[i];
+}
+media = total / 7;
+for(int i=0; i < 7; i++){
+    if (vendas[i] > media) {
+        acima++;
+    } else if (vendas[i] < media){
+        abaixo++;
+    }
+}
+menor = vendas[0];
+maior = vendas[0];
+dia = 1;
+for(int i=1; i < 7; i++){
+    if(vendas[i] > maior){
+        maior = vendas[i];
+        dia = i + 1;
+    }
+    if(vendas[i] < menor){
+        menor = vendas[i];
+    }
+}
+for(int i=0; i < 7; i++){
+    if(vendas[i] == 0){
+        zero++;
+    }
+}
+    if(total > 0){
+        porcentagem = (maior / total) * 100.00;
+    }
+    else{
+        porcentagem = 0;
+    }
+
+    printf("O faturamento da semana foi: %.2f reais \n", total);
+    printf("A media diaria de vendas foi: %.2f reais \n", media);
+    printf("O maior valor de venda: %.2f reais \n", maior);
+    printf("O menor valor de venda: %.2f reais \n", menor);
+    printf("O dia de maior venda foi: %d \n", dia);
+    printf("Tiveram %d dias com vendas acima da media diaria \n", acima);
+    printf("Tiveram %d dias com vendas abaixo da media diaria \n", abaixo);
+    printf("Dias sem faturamento: %d \n", zero);
+    printf("O dia de maior venda representa %.2f%% das vendas totais", porcentagem); 
+  return 0;
+}
+
+//-----------------------------------------------------------------------------------------------------------------
