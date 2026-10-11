@@ -83,7 +83,6 @@ int main(){
     float total, media, maior, menor, porcentagem;
     int acima, abaixo, zero, dia;
     printf("<<Insira o valor das vendas de cada dia>> \n");
-
 total = 0;
 media = 0;
 acima = 0;
@@ -129,7 +128,6 @@ for(int i=0; i < 7; i++){
     else{
         porcentagem = 0;
     }
-
     printf("O faturamento da semana foi: %.2f reais \n", total);
     printf("A media diaria de vendas foi: %.2f reais \n", media);
     printf("O maior valor de venda: %.2f reais \n", maior);
