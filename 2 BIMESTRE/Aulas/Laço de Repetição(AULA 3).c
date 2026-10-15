@@ -42,14 +42,20 @@ int main(){
 
 #include <stdio.h>
 int main(){
-    int valores[3], i;
-    printf("Insira 3 valores: \n");
-    for(i=0; i < 3; i++){
-        scanf("%d", &valores[i]);    
-    }
+    int ini, fim, passo;
+    printf("Entre com o valor inicial, final, e passo:\n");
+    scanf("%d %d %d", &ini, &fim, &passo);
     printf("SEQUENCIA:\n");
-    for(i = valores[0] + valores[2]; i <= valores[1]; i += valores[2]){
-        printf("%d\n", i);
+    if(ini<fim){
+        while(ini<fim){
+            printf("|%d|", ini);
+            ini += passo;
+        }
+    }else{
+        while(ini>fim){
+            printf("|%d|", ini);
+            ini -= passo;
+        }
     }
    return 0;
 }
