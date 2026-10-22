@@ -19,8 +19,8 @@ int main(){
         if(palavra[i] == palavra[j]) palindromo = 1;
         else palindromo = 0;
     }
-    if(palindromo) printf("\nEh palindromo");
-    else printf("\nNao eh palindromo");
+    if(palindromo) printf("Eh palindromo");
+    else printf("Nao eh palindromo");
     
     return 0;
 }
