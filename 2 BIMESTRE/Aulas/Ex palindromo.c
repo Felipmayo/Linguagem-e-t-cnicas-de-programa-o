@@ -15,7 +15,6 @@ int main(){
     scanf("%s", &palavra);
     printf("Inserido: %s\n", palavra);
     for(i=0; i<30 && palavra[i] != '\0'; i++);
-    printf("%d", i);
     for(j=i-1, i=0; i<j; i++, j--){
         if(palavra[i] == palavra[j]) palindromo = 1;
         else palindromo = 0;
